@@ -7,3 +7,8 @@ npm run dev
 npm run build
 
 загружаем содержимое папки out
+
+
+_______
+товар в "constans/DataProducts.js"
+наценка в "constans/ExtraCharge.js"
