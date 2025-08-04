@@ -1,4 +1,9 @@
+git clone https://github.com/vitechmins/gibkosale.by.git
+
+
+установка 
 npm i
+
 
 запуск локально 
 npm run dev
