@@ -1,0 +1,61 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    './pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './components/**/*.{js,ts,jsx,tsx,mdx}',
+    './app/**/*.{js,ts,jsx,tsx,mdx}',
+  ],
+  theme: {
+    extend: {
+      screens: {
+        xz: "320px",
+        xy: "376px",
+        xx: "415px",
+        xs: "480px",
+        xm: "575px",
+        ss: "620px",
+        sm: "768px",
+        sd: "991px",
+        md: "1060px",
+        lg: "1200px",
+        xl: "1700px",
+      },
+      boxShadow: {
+        'inner-amber': 'inset 0 0 20px #A50C30',
+        'inner-amber2': 'inset 0 0 20px #2BA4D7',
+        'inner-amberWhatsApp': 'inset 0 0 20px #3BC34D',
+        'hover-amber': '0 4px 15px rgba(169, 38, 209, 0.7)',
+      },
+      colors: {
+        'color-black': '0,0,0',
+        'color-white': '255,255,255',
+      },
+      backgroundImage: {
+        'gradient-custom': 'linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(255,255,255,1) 50%, rgba(0,0,0,0) 100%)',
+      },
+      opacity: {
+        '30': '0.3',
+      },
+      backdropInvert: {
+        15: '.15',
+        25: '.25',
+        50: '.50',
+        75: '.75',
+      },
+    },
+  },
+  plugins: [require("daisyui")],
+  daisyui: {
+    themes: [
+      {
+        mytheme: {
+          "primary": "#db003e",
+          "secondary": "#2196f3",
+          "accent": "#2BA4D7",
+          "neutral": "#ddd",
+          "base-100": "#ffffff",
+        },
+      },
+    ],
+  },
+}
